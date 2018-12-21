@@ -1,0 +1,32 @@
+
+.nav-link{
+	
+}
+
+
+p{
+	background-image: url("https://3.bp.blogspot.com/-lihxV1DYBUQ/Wcopj_I3eOI/AAAAAAAAAuc/hGhEgCLwjYUDoVi26L_YCJbT3vqqA547QCK4BGAYYCw/s1600/indian%2Bspices%2Bsydney.jpg");
+	color: #FFFF00;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 180px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.button-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn-secondary{
+	border: black solid 2px;
+	background-color: transparent;
+	border-radius: 0;
+	color: black;
+	font-weight: bold;
+	font-family: 'Source Serif Pro', serif;
+
+}

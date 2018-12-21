@@ -1,0 +1,83 @@
+body{
+	background-color: #F23E00;
+}
+
+h1{
+	color: white;
+	font-size: 40px;
+}
+
+.img-container{
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+  /*margin: 10px;*/
+}
+
+/*flip code----------------------------------------------------------------------------------------------------*/
+#i1_container, #i2_container {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  height: 200px;
+  z-index: 1;
+  border: 4px solid white;
+}
+#i2_container{
+	width: 200px;
+  height: 290px;
+}
+#i1_container, #i2_container {
+	perspective: 1000;
+}
+#i1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#i1_container:hover #i1_card {
+  transform: rotateY(180deg);
+  /*box-shadow: -5px 5px 5px #aaa;*/
+}
+#i2_container:hover #i1_card {
+	transform: rotateY(180deg);
+  	/*box-shadow: -5px 5px 5px #aaa;*/
+}
+.face, .face2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back, .face2.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+.img-class{
+	height: 200px;
+	width: 300px;
+	margin: 7px;
+	border: 4px solid black;
+}
+
+/*img:hover{
+	transition: all 2s;
+	transform: scale(1.1);
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+*/
+.img-class2{
+	height: 290px;
+	width: 200px;
+  margin: 7px;
+	border: 4px solid black;
+}
